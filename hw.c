@@ -3,6 +3,7 @@
 
 int main()
 {
-  printf("Thank you Lord!\n");
-  exit(0);
+	printf("Thank you Lord!\n");
+	exit(0);
 }
+
