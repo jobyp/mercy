@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 	dst_fd = open(dst_file, O_WRONLY|O_CREAT|O_TRUNC|O_APPEND,
 		      S_IRUSR|S_IRGRP|S_IWUSR|S_IWGRP);
 	if (dst_fd == -1) {
-		fprintf(stderr, "failed to open %s\n", dst_fd);
+		fprintf(stderr, "failed to open %s\n", dst_file);
 		perror("open()");
 		ret = EXIT_FAILURE;
 		goto close_src_fd;

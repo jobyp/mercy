@@ -5,7 +5,7 @@ all: $(PROGS)
 	@:
 
 %: %.c
-	gcc -Werror -Og -pedantic -std=c17 -o $@ $<
+	gcc -Werror -Wformat -Og -pedantic -std=c17 -o $@ $<
 
 .PHONY: clean
 clean:
